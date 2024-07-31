@@ -28,19 +28,13 @@ This project implements a Neural ODE to transport a Gaussian distribution to an 
 - A figure with two subplots, one for each embedding.
 - Cells are colored by time.
 
-![PHATE vs PCA](path/to/phate_vs_pca_image.png)
-
 #### Generated Cells vs Real Cells in PCA Space
 - A figure comparing generated cells and real cells in PCA space.
 - Real cells use a different marker than generated cells.
 - Cells are colored by time.
-
-![Generated vs Real Cells in PCA Space](path/to/generated_vs_real_pca_image.png)
 
 #### Generated Cells vs Real Cells Expression
 - A figure with 10 subplots (2 rows of 5).
   - One row for generated data.
   - One row for ground truth data.
 - Generated data is colored differently than ground truth data.
-
-![Generated vs Real Cells Expression](path/to/generated_vs_real_expression_image.png)
