@@ -1,7 +1,35 @@
 # embryoidNeuralODE
 Neural ODE Implementation for Invertible Distribution Transport between an Embryoid Cell Distribution and the Gaussian Distribution
 
-Includes the following feature plots plots:
+
+Technical Implementation:
+
+- implements a neural ODE
+    
+    + utilizes TorchDyn](https://torchdyn.org)
+        
+- implements the the [`Learner(pl.LightningModule)`][`LightningModule`] [PyTorch Lightning] class
+    
+    +  transports a gaussian distribution to a cell distribution
+    
+    + retains invertibility i.e.
+        
+        - goes from cells to a gaussian and vice versa
+        
+- inverts generated cells from PCA space to gene space
+        
+- implements magnitude regularization
+
+    + utilizes [TorchDyn](https://torchdyn.org)
+
+    + references [Tong _et al._ 2020](https://arxiv.org/pdf/2002.04461.pdf)
+
+
+[PyTorch Lightning]: https://lightning.ai/docs/pytorch/stable/
+[`LightningModule`]: https://lightning.ai/docs/pytorch/stable/common/lightning_module.html
+
+
+Includes the following feature plots:
 
 - PHATE vs PCA
     
